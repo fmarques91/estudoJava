@@ -23,5 +23,7 @@ public class Taboada{
         for (int i = 1; i <= finalTaboada; i++){
             System.out.println(tab + " x " + i + " = " + (tab * i));
         }
+
+        scan.close();
     }
 }

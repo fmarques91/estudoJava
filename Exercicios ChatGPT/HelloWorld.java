@@ -13,5 +13,7 @@ public class HelloWorld{
         String nome = scan.nextLine();
 
         System.out.println("Hello World " + nome + "!");
+        scan.close();
     }
+
 }

@@ -29,5 +29,7 @@ public class Primo{
                 System.out.println(i);
             }
         }
+
+        scan.close();
     }
 }

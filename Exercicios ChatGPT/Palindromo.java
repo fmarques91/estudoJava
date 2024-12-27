@@ -18,5 +18,7 @@ public class Palindromo{
             palavraInvertida += letra;
         }
         System.out.println(palavraInvertida);
+
+        scan.close();
     }
 }
