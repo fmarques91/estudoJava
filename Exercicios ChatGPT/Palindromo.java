@@ -17,7 +17,12 @@ public class Palindromo{
             char letra = palavra.charAt(i);
             palavraInvertida += letra;
         }
-        System.out.println(palavraInvertida);
+        
+        if(palavraInvertida.toLowerCase().equals(palavra.toLowerCase())) {
+        	System.out.println(palavra + " é Palindromo!");
+        } else {
+        	System.out.println(palavra + " não é Palindromo!");
+        }
 
         scan.close();
     }
