@@ -6,15 +6,32 @@ public class Cliente {
 	private String nome;
 	private double saldo;
 
-	public Cliente(int numConta, String nome, double saldo) {
+	public Cliente(int numConta, String nome, double depositoInicial) {
 		this.numConta = numConta;
 		this.nome = nome;
-		this.saldo = saldo;
+		deposito(depositoInicial);
 	}
 
 	public Cliente(int numConta, String nome) {
 		this.numConta = numConta;
 		this.nome = nome;
+	}
+	
+	//Método para impressão que criei
+	public void toPrint() {
+		System.out.println("Account " + this.getNumConta() + 
+							", Holder: " + this.getNome() + 
+							", Balance: $" + String.format("%.2f", this.getSaldo()));
+	}
+	
+	//Método utilizado pelo curso
+	public String toString() {
+		return "Account "
+				+ numConta
+				+ ", Holder: "
+				+ nome
+				+ ", Balance: $"
+				+ String.format("%.2f", saldo);
 	}
 
 	public int getNumConta() {
