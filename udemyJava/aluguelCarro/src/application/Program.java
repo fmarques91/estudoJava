@@ -43,7 +43,7 @@ public class Program {
 		System.out.println("Imposto: " + cr.getInvoice().getTax());
 		System.out.println("Pagamento Total: " + cr.getInvoice().getTotalPayment());
 
-		sc.close();
+		sc.close(); 
 	}
 
 }
